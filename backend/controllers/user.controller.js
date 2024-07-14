@@ -32,7 +32,6 @@ export const registerUser = async (req, res) => {
       phone,
       password: hashedPassword,
       gender,
-      otp,
     });
 
     await user.save();
